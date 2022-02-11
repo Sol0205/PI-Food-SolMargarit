@@ -9,6 +9,7 @@ const getApiInfo = async () => {
   return apiInfo?.data?.results.map((data) => ({
     id: data.id,
     title: data.title,
+    diets: data.diets[0],
     summary: data.summary,
     aggregateLikes: data.aggregateLikes,
     healthScore: data.healthScore,
